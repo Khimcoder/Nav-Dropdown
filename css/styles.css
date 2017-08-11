@@ -180,7 +180,17 @@ ul {
 
 .nav-menu__dropdown {
   top: 100%;
-  left: 0;
   right: 0;
   padding: 0;
   position: absolute; }
+  .nav-menu__dropdown li {
+    padding: 17px 10px;
+    border: 1px solid lightgrey; }
+
+.nav-menu__dropdown1 {
+  width: 17rem;
+  border: 7px solid lightgrey; }
+
+.nav-menu__dropdown2, .nav-menu__dropdown3 {
+  width: 13rem;
+  border: 7px solid lightgrey; }

@@ -36,19 +36,18 @@ ul{
 
 .nav-menu__item:last-child{
 	background-color: $primcolor;
-	.fa-search{
+	.fa-search-white{
 		color:white;
+		font-size: 2rem;
 	}
 }
 
 .nav-menu__dropdown{
-	// display: flex;
-	// flex-direction: column;
-	// display: none;
 	top: 100%;
     right: 0;
     padding: 0;
 	position: absolute;
+	// display: none;
 	li{
 		padding: 17px 10px;
 		border: 1px solid lightgrey;
@@ -57,11 +56,35 @@ ul{
 
 .nav-menu__dropdown1{
 	width: 17rem;
-    border: 7px solid lightgrey;
+    border-right: 7px solid lightgrey;
+	border-left: 7px solid lightgrey;
+	border-bottom: 7px solid lightgrey;
 }
 .nav-menu__dropdown2, .nav-menu__dropdown3{
 	width: 13rem;
-	border: 7px solid lightgrey;
+	border-right: 7px solid lightgrey;
+	border-left: 7px solid lightgrey;
+	border-bottom: 7px solid lightgrey;
 }
+
+.nav-menu__dropdown4{
+	border-right: 7px solid lightgrey;
+	border-left: 7px solid lightgrey;
+	border-bottom: 7px solid lightgrey;
+	.dropdown-search{
+		display: flex;
+	}
+	.searchTerm{
+		padding: 11px;
+	}
+	button{
+		background: white;
+		.fa-search-blue{
+		    color: $primcolor;
+		    font-size: 2rem;
+		}
+	}
+}
+
 
 

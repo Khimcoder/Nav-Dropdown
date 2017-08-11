@@ -44,5 +44,29 @@
 	 		</li>
 		</ul>
 	</nav>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+			
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				$('.nav-menu__dropdown').hide();
+
+				 // When the user clicks on the Nav button, 
+	    //          toggle between hiding and showing the dropdown menu 
+				$('.nav-menu__item').click( function(event){
+				        event.stopPropagation();
+				        $(this).find('.nav-menu__dropdown').toggle();
+				    });
+				// click anywhere on the page to close sliding menu
+				    $(document).click( function(){
+				        $('.nav-menu__dropdown').hide();
+				    });
+
+				// if dropdown is open, close before opening another dropdown
+					
+
+			});
+		</script>
 </body>
 </html>

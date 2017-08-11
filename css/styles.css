@@ -187,6 +187,8 @@ ul {
   .nav-menu__dropdown li {
     padding: 17px 10px;
     border: 1px solid lightgrey; }
+    .nav-menu__dropdown li:hover {
+      background-color: #6ddde8; }
 
 .nav-menu__dropdown1 {
   width: 17rem;

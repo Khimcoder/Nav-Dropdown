@@ -52,20 +52,19 @@
 
 				$('.nav-menu__dropdown').hide();
 
-				 // When the user clicks on the Nav button, 
+				 // When the user clicks on the Nav menu, 
 	    //          toggle between hiding and showing the dropdown menu 
+
+	    		// if dropdown is open, close before opening another dropdown
 				$('.nav-menu__item').click( function(event){
 				        event.stopPropagation();
-				        $(this).find('.nav-menu__dropdown').toggle();
+				        $('.nav-menu__dropdown').hide();
+				   	    $(this).find('.nav-menu__dropdown').toggle();
 				    });
 				// click anywhere on the page to close sliding menu
-				    $(document).click( function(){
+				$(document).click( function(){
 				        $('.nav-menu__dropdown').hide();
 				    });
-
-				// if dropdown is open, close before opening another dropdown
-					
-
 			});
 		</script>
 </body>
